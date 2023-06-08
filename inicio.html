@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu lateral dinamico</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="container">
+        <div class="sidebar">
+            <div class="side-hide">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+
+
+            <img src="L.png" width="120" alt="LOGO">
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="habitad.html">Habitad</a></li>
+                <li><a href="caracteristicas.html">Caracteristicas</a></li>
+                <li><a href="alimentacion.html">Alimentacion</a></li>
+                <li><a href="reproduccion.html">Reproducion</a></li>
+            </ul>
+        </div>
+        
+        <div class="content">
+            <h2>tigre de bengala blanco</h2>
+            <p>Mejor vivir un año como tigre, que cien años como oveja</p>
+            <p>El tigre no está bajo el miedo, sino de la puntería</p>
+            <p>Cuando un hombre quiere matar un tigre, 
+                se llama deporte; cuando un tigre quiere matar a un hombre se llama ferocidad</p>
+                <center><img src="tarjeta.png" width="600" alt="LOGO"></center>
+
+
+                <center><button>Mostrar Menu</button></center>
+        </div>
+        
+
+    </section>
+
+    <!-- JS jQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+
+        // Mostrar Sidebar
+        $("button").on('click', function() {
+            $(".container").toggleClass("show");
+        });
+
+        $(".side-hide").on('click', function() {
+            $(".container").toggleClass("show");
+        })
+
+    </script>
+
+</body>
+
+</html>
